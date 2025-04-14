@@ -1,2 +1,2 @@
-ITMO Automation priject
+#ITMO Automation priject
 Репозиторий для задач по автоматизированному тестированию на курсе ИТМО
