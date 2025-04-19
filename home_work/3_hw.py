@@ -39,3 +39,4 @@ def cisla_10(num1, num2, num3):
         print('no')
 
 cisla_10(1,2,9)
+
