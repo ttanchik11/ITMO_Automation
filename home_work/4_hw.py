@@ -60,3 +60,33 @@ calculator.subtraction()
 
 zero_div = Math(10, 0)
 zero_div.division()
+
+#задание 3
+
+class Sidebar:
+    type: str = "Button"
+    def __init__(self, text, loc=""):
+        self.text = text
+        self.loc = loc
+    def click(self):
+        return f"Клик по кнопке {self.text}"
+
+buttons = [
+    Sidebar("Text Box"),
+    Sidebar("Check Box"),
+    Sidebar("Radio Button"),
+    Sidebar("Web Tables"),
+    Sidebar("Buttons"),
+    Sidebar("Links"),
+    Sidebar("Broken Links - Images"),
+    Sidebar("Upload and Download"),
+    Sidebar("Dynamic Properties")
+]
+print("Текст кнопок:")
+for button in buttons:
+    print(f"- {button.text} (тип: {button.type})")
+print("\n")
+
+print("Результаты кликов:")
+for button in buttons:
+    print(button.click())
