@@ -26,7 +26,7 @@ class Button:
 home = Button('Домой', '/home')
 catalog_msk = Button('Каталог', '/msk/catalog')
 
-#получаем досутп к атрибутам
+#получаем доступ к атрибутам
 print(home.text)
 print('Кнопка ' + home.text + ' имеет ссылку ' + home.link)
 
