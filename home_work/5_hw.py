@@ -2,12 +2,10 @@
 
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-import time
+
 
 driver = webdriver.Chrome()
 driver.get("https://www.saucedemo.com/")
-
-time.sleep(5)
 
 username = driver.find_element(By.CSS_SELECTOR, '#user-name')
 if username is None:
@@ -27,5 +25,4 @@ if submit is None:
 else:
     print("Кнопка найден")
 
-input("Нажмите Enter чтобы закрыть браузер...")  # Браузер останется открытым
 driver.quit()
